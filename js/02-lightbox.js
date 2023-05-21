@@ -8,13 +8,14 @@ const markupItems = makeMarkupItemsOfGallery(galleryItems);
 galleryEl.insertAdjacentHTML("beforeend", markupItems);
 
 let lightbox = new SimpleLightbox(".gallery a", {
-  captions: true,
-  captionSelector: "img",
-  captionType: "attr",
-  captionsData: "alt",
-  captionPosition: "bottom",
-  captionDelay: 250,
-});
+    captions: true,
+    captionSelector: "img",
+    captionType: "attr",
+    captionsData: "alt",
+    captionPosition: "bottom",
+    captionDelay: 250,
+  });
+  
 
 function makeMarkupItemsOfGallery(items) {
   return items
@@ -32,3 +33,4 @@ function makeMarkupItemsOfGallery(items) {
     )
     .join("\n");
 }
+

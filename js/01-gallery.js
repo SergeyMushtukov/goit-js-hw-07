@@ -32,7 +32,7 @@ function makeMarkupItemsOfGallery(items) {
 function onItemOfGalleryClick(evt) {
   evt.preventDefault();
 
-  if (!evt.target.classList.contains("gallery__image")) {
+  if (!evt.target.nodeName === "IMG") {
     return;
   }
 
